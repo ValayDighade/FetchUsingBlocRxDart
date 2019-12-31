@@ -6,6 +6,7 @@ import 'package:http/http.dart' show Client;
 class ApiProvider {
   Client client = Client();
   final _baseUrl ="http://jsonplaceholder.typicode.com/users/";
+ // final _baseUrl ='http://192.168.1.215:8080/mongo?query=query{getuser(usertype:"teacher",schoolId:"101")}';
 
   Future<List<WeatherResponse>> fetchLondonWeather() async {
     final List<WeatherResponse> allUsers = [];
